@@ -7,23 +7,24 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("customer")
+@RequestMapping("/customers")
 class CustomerController {
 
     @GetMapping
-    fun getCustomer(): CustomerModel {
+    fun getCustomer (): CustomerModel {
         return CustomerModel(
             "1",
             "Denilson",
-            "denilson@email.com")
+            "denilson@email.com"
+        )
     }
 
     @PostMapping
-    fun create(): CustomerModel {
+    fun createCustomer (): CustomerModel {
         return CustomerModel(
             "1",
             "Denilson",
-            "denilson@email.com")
+            "denilson@email.com"
+        )
     }
-
 }

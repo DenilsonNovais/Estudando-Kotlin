@@ -1,4 +1,4 @@
-package com.mercadolivro.request.request
+package com.mercadolivro.request
 
 data class PutCustomerRequest (
   val name: String,

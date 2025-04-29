@@ -22,6 +22,9 @@ class CustomerService {
         } else {
             customers.last().id!!.toInt() + 1
         }.toString()
+
+        customer.id = id
+
         customers.add(CustomerModel(id, customer.name, customer.email))
     }
 

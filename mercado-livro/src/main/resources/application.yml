@@ -4,7 +4,7 @@
        ddl-auto: update
      show-sql: true
    datasource:
-        url: jdbc:mysql://localhost:3306/mercadolivro
+        url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
         username: root
-        password: root
+        password: 1394
         driver-class-name: com.mysql.cj.jdbc.Driver
